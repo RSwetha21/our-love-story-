@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Two Years of Us ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decoration -->
+    <div class="background-glow"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Opening screen -->
+    <section class="hero">
+
+        <div class="hero-top">
+            <span class="tiny-heart">♥</span>
+            <span>OUR LITTLE LOVE STORY</span>
+            <span class="tiny-heart">♥</span>
+        </div>
+
+        <div class="hero-content">
+
+            <p class="eyebrow">October 21 · Two years ago</p>
+
+            <h1>
+                The day I met<br>
+                <em>my forever.</em>
+            </h1>
+
+            <p class="hero-description">
+                One video call. Two hearts.<br>
+                And a love story that distance could never change.
+            </p>
+
+            <div class="hero-photo">
+                <img src="photos/first screenshoot.jpeg" alt="Our first conversation">
+                <div class="photo-caption">
+                    <span>Our very first conversation</span>
+                    <span>♥</span>
+                </div>
+            </div>
+
+            <button class="main-button" onclick="openLetter()">
+                Open your little surprise <span>♡</span>
+            </button>
+
+            <p class="scroll-hint">A little gift, made just for you</p>
+
+        </div>
+
+        <div class="hero-bottom">
+            MADE WITH ALL MY LOVE · SWETHA
+        </div>
+
+    </section>
+
+
+    <!-- Love letter -->
+    <section class="letter-section" id="letterSection">
+
+        <div class="section-label">
+            <span>01</span>
+            <span>A LETTER FROM MY HEART</span>
+        </div>
+
+        <div class="letter-card">
+
+            <div class="letter-decoration">♡</div>
+
+            <p class="letter-date">October 21, 2024</p>
+
+            <h2>My dearest PethuKutti,</h2>
+
+            <div class="letter-text">
+
+                <p>
+ 
+
+Namba pesa start panni full la 2 years mudijiduchi. Indha 2 years la enaku naraya happy moments, sad moments nu naraya Iruku.. ahan Adhuku la starting irudhadhu oct 21 dhan so ennoda life voda special day adha... Neengalum ennoda husband matum illa ellamae... Ella ponnu matri bayatutae dhan indha marriage life kula vantan ahan enaku marriage aiduchi neenga dhan ennoda husband epdi nu enaku oru naal kuda thonadhae illa friend dha jolly Iruku.. enaku irukaradhu problem mae indha distance dhan... Enaku day full la pethu kita pesuno pesikitae irukano... Unga kudavae irukano nu ivlo asa Iruku... I Love you so much... Unga mela Iruka love epavum enaku kami agavae agudu pethu... Neenga romba sweet theriyuma.. enaku unga kita pidichadhu kova vantalum adha cool handle panradhu ennala adhu kandipa mudiyadhu kashtama.. aprm andha kutti kannu... Adhu enaku romba pidikum... Enaku pidikadha oru vishiyam call cut pannu solradhu dhan 😂😂 puridhu ungaloda personal space sa adhuka kudadhu.. seri ok love you so much sikarama vantudunga pethu... Miss you so much❤️
+                </p>
+
+                <p class="letter-ending">
+                    Happy two years of our beautiful story.
+                    <br><br>
+                    Forever yours,<br>
+                    <span>KuttiPethu ♥</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="love-game" id="loveGame">
+
+    <div class="section-label">
+        <span>02</span>
+        <span>A LITTLE GAME FOR YOU</span>
+    </div>
+
+    <div class="game-card">
+
+        <div class="game-heart">♡</div>
+
+        <p class="game-eyebrow">LET'S PLAY, MY LOVE</p>
+
+        <h2>How well do you<br><em>know your wife?</em></h2>
+
+        <p class="game-description">
+            3 little questions about our love story.
+            Ready, my favourite person?
+        </p>
+
+        <div class="game-progress">
+            <span id="questionCount">QUESTION 1 OF 3</span>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div id="questionArea">
+
+            <h3 class="question-text" id="questionText">
+                When did our beautiful story begin?
+            </h3>
+
+            <div class="answer-options" id="answerOptions"></div>
+
+            <p class="game-feedback" id="gameFeedback"></p>
+
+            <button class="game-next" id="nextButton"
+                    onclick="nextQuestion()" disabled>
+                Next question ♡
+            </button>
+
+        </div>
+
+        <div class="game-result" id="gameResult">
+
+            <div class="result-heart">♥</div>
+
+            <h3 id="resultTitle">You know me so well!</h3>
+
+            <p id="resultText">
+                My favourite person, my forever love.
+            </p>
+
+            <button class="game-next" onclick="restartGame()">
+                Play again ♡
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    
+
+    <!-- Long distance -->
+    <section class="distance-section">
+
+        <div class="section-label">
+            <span>03</span>
+            <span>INDIA TO POLAND</span>
+        </div>
+
+        <div class="distance-content">
+
+            <div class="distance-heart">♥</div>
+
+            <h2>
+                Miles apart.<br>
+                <em>Never apart in heart.</em>
+            </h2>
+
+            <p>
+                You in Poland. Me in India.
+                Different skies, different time zones,
+                but the same moon above us.
+            </p>
+
+            <div class="distance-line">
+
+                <div class="country">
+                    <span class="country-icon">🇮🇳</span>
+                    <span class="country-name">INDIA</span>
+                    <span class="country-person">Swetha</span>
+                </div>
+
+                <div class="connection">
+                    <span>♡</span>
+                    <div class="connection-line"></div>
+                    <span>♡</span>
+                </div>
+
+                <div class="country">
+                    <span class="country-icon">🇵🇱</span>
+                    <span class="country-name">POLAND</span>
+                    <span class="country-person">Naveen</span>
+                </div>
+
+            </div>
+
+            <p class="distance-note">
+                No distance can make me love you any less.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Final surprise -->
+    <section class="final-section">
+
+        <div class="final-card">
+
+            <span class="final-small">AND ONE LAST THING...</span>
+
+            <div class="final-heart">♡</div>
+
+            <h2>
+                If I could choose<br>
+                <em>all over again...</em>
+            </h2>
+
+            <p>
+                I would still choose you.<br>
+                In every lifetime, in every version of my story.
+            </p>
+
+            <button class="final-button" onclick="showFinalMessage()">
+                One last surprise for you ♥
+            </button>
+
+            <div class="final-message" id="finalMessage">
+
+                <div class="final-message-inner">
+                    <span>♥</span>
+
+                    <h3>My forever person.</h3>
+
+                    <p>
+                        Happy anniversary, my love.
+                        Thank you for being my husband,
+                        my best friend, and my favourite hi.
+                        I can't wait for the day when our
+                        goodbyes turn into good nights together.
+                    </p>
+
+                    <p class="final-signature">
+                        I love you, My Husband.<br>
+                        Always and always.<br>
+                        <strong>— Your KuttiPethu</strong>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            OUR STORY · OCTOBER 21 · FOREVER
+        </footer>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
